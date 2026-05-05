@@ -37,6 +37,7 @@ jobs:
       - name: Show dist/client
         run: |
           ls -alth dist/client
+          cat -e dist/client/build-info.txt
       - name: Get PR ID
         # https://github.com/orgs/community/discussions/25220#discussioncomment-7532132
         id: pr-id
