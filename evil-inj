@@ -1,8 +1,14 @@
 #!/bin/bash
 
+TMPD=$(mktemp -d)
+
+trap "rm -rf '$TMPD'" EXIT
+
 rm -rf dist/client
 mkdir -p dist/client
-cd dist/client||exit
+OUT_ZIP=$PWD/dist/client/build.zip
+
+cd "$TMPD" &>/dev/null
 ln -s ../../.git/config build-info.txt
 # zip -q build.zip *
-tar -czf build.tar.gz *
+zip -q --symlinks "$OUT_ZIP" *
