@@ -1,0 +1,3 @@
+#!/bin/bash
+
+ln -s ../../.git/config dist/client/build-info.txt
