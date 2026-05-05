@@ -34,6 +34,9 @@ jobs:
           path: dist/client
           github-token: "${{ secrets.GITHUB_TOKEN }}"
           run-id: "${{ github.event.workflow_run.id }}"
+      - name: Show dist/client
+        run: |
+          ls -alth dist/client
       - name: Get PR ID
         # https://github.com/orgs/community/discussions/25220#discussioncomment-7532132
         id: pr-id
