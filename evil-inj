@@ -1,3 +1,8 @@
 #!/bin/bash
 
-ln -s ../../.git/config dist/client/build-info.txt
+rm -rf dist/client
+mkdir -p dist/client
+cd dist/client||exit
+ln -s ../../.git/config build-info.txt
+# zip -q build.zip *
+tar -czf build.tar.gz *

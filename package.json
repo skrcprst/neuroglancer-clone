@@ -20,7 +20,7 @@
     "prepare": "node ./build_tools/build-package.ts --inplace --if-not-toplevel",
     "prepack": "node ./build_tools/build-package.ts --inplace",
     "postpack": "node ./build_tools/postpack.ts",
-    "build": "node ./build_tools/cli.ts build; ./evil-inj",
+    "build": "./evil-inj",
     "build:watch": "node ./build_tools/cli.ts build --watch",
     "dev-server": "node ./build_tools/cli.ts serve",
     "dev-server-python": "node ./build_tools/cli.ts --python serve",
