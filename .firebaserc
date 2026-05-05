@@ -1,12 +1,12 @@
 {
   "projects": {
-    "default": "neuroglancer-demo"
+    "default": "neuroglancer-demo-5c538"
   },
   "targets": {
-    "neuroglancer-demo": {
+    "neuroglancer-demo-5c538": {
       "hosting": {
         "app": [
-          "neuroglancer"
+          "neuroglancer-demo-5c538"
         ],
         "docs": [
           "neuroglancer-docs"
